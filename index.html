@@ -237,7 +237,7 @@
         let res = sdk.isMethodSupported('seekPermission')
         console.log('seekPermission method supported = ' + res)
 
-        sdk.seekPermission([readsms, location]).then((data) => {
+        sdk.seekPermission([location]).then((data) => {
           console.log('Successfully got permission for readsms')
           console.log(data);
         })
