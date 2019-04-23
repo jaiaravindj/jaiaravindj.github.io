@@ -230,7 +230,7 @@
     function seekPermission() {
       let env = PhonePe.Constants.Species.web
       let readsms = PhonePe.Constants.Permission.READ_SMS
-      let location = PhonePe.Constants.Permission.LOCATION
+      let location = "android.permission.ACCESS_FINE_LOCATION"
 
       PhonePe.PhonePe.build(env, this.currentOS()).then((sdk) => {
 
